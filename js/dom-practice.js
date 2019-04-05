@@ -18,6 +18,13 @@ step4.addEventListener("click", function () {
 });
 
 //STEP 5
+function head () {
+    window.document.getElementById("step5").addEventListener("click", function () {
+    "use strict";
+    window.alert("I have been clicked");
+    });
+}
+window.addEventListener("load", head);
 
 //STEP 6
 document.getElementById("redirect").addEventListener("click", function(e) {
@@ -47,6 +54,14 @@ function resizeWindow() {
 }
 
 //STEP 9
+var startDisplay;
+start.addEventListener("click", function() {
+    startDisplay = setInterval(function(){ console.log("Learning Javascript is fun!"); }, 2000);
+}, false);
+
+stop.addEventListener("click", function() {
+    clearInterval(startDisplay);
+}, false);
 
 //STEP 10
 window.document.getElementById("step10").addEventListener("click", function () {

@@ -38,13 +38,9 @@ var showEmployees = function () {
 var addEmployee = function () {
     "use strict";
     var name, title, extension, employee = [];
-
-    // GRAB VALUES OF TEXT BOXES
     name = $("name").value;
     title = $("title").value;
     extension = $("extension").value;
-
-    // BASIC VALIDATION
     if (name === "") {
         $("Name").innerHTML = "This field is required!";
         return;
@@ -52,7 +48,6 @@ var addEmployee = function () {
         $("Name").innerHTML = "";
         employee.push(name);
     }
-
     if (title === "") {
         $("Title").innerHTML = "This field is required!";
         return;
@@ -60,7 +55,6 @@ var addEmployee = function () {
         $("Title").innerHTML = "";
         employee.push(title);
     }
-
     if (extension === "") {
         $("Extension").innerHTML = "This field is required!";
         return;
